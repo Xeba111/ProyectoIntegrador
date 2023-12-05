@@ -1,0 +1,4 @@
+user: '<HUMAN>:'
+bot: '<ASSISTANT>: '
+turn_template: <|user|>\n<|user-message|>\n\n<|bot|>\n<|bot-message|>\n\n
+context: "A continuaci\xF3n hay una instrucci\xF3n que describe una tarea, junto con una entrada que proporciona m\xE1s contexto. Escriba una respuesta que complete adecuadamente la solicitud."
