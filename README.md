@@ -36,10 +36,13 @@ En la carpeta INSTRUCTION-TEMPLATES se encuentran los formatos a usar para cada 
 
 Requerimiento: Mínimo 16GB de VRAM en una tarjeta de video NVIDIA con tecnología CUDA (es posible la ejecución en Apple Silicon e Intel CPU, revisar Wiki de la interfaz [text-generation-webui](https://github.com/oobabooga/text-generation-webui). También se requiren aproximadamente 50GB de espacio de disco para descargar todos los modelos y adaptadores. 
 
-1. Seguir las instrucciones en la página de la interfaz [text-generation-webui](https://github.com/oobabooga/text-generation-webui) para la instalación del ENV y del programa en sí.
+1. Seguir las instrucciones en la página de la interfaz para la instalación del ENV y del programa en sí.
 2. Ejecutar la interfaz acorde a las instrucciones.
 3. En la pestaña "Model", descargar un modelo de acuerdo a las instrucciones de la interfaz. Seleccionar los modelos provistos anteriormente.
 4. Cargar el modelo con la función "load in 8 bit" activada para que el modelo pueda ejecutarse en 16GB de VRAM.
 5. Colocar los adaptadores, presets y templates en sus respectivas carpetas dentro de la carpeta de instalación de la interfaz.
 6. En la sección "LORA" seleccionar el adaptador que se quiera probar para el modelo cargado.
-7. En la pestaña "Parameters" seleccionar el preset provisto para el modelo escogido. 
+7. En la pestaña "Parameters" seleccionar el preset provisto para el modelo escogido.
+8. En la pestaña "Instruction" seleccionar el preset provisto para el modelo escogido.
+9. En la pestaña "Chat" seleccionar el modo 'instruct'.
+10. El modelo ya está listo para interactuar con el usuario. 
