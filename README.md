@@ -20,7 +20,7 @@ Todos los modelos han sido entrenados usando la técnica de QLORA con las librer
 Los adaptadores LORA listos para aplicar a los modelos antes mencionados se encuentran en la carpeta LORA. Cada modelo tiene 3 adaptadores:
 - Un adaptador solo para instrucciones en español
 - Un adaptador solo para instruciones acerca de leyes ecuatorianas en español
-- Un adaptador fusionado que contiene ambos en uno solo. Este adaptador se creó ya que PEFT (versión 0.6.2) muchas veces tiene problemas al cargar más de un adaptador a la vez en la interfaz de generación.
+- Un adaptador fusionado que contiene ambos en uno solo. Este adaptador se creó ya que PEFT (versión 0.6.2) muchas veces tiene problemas al cargar más de un adaptador a la vez en la interfaz de generación. Este adaptador fue hecho con esta [extensión](https://github.com/FartyPants/Playground) que incluye varias nuevas posibilidades dentro de la interaz. 
 
 ### Presets de generación
 
@@ -36,12 +36,12 @@ En la carpeta INSTRUCTION-TEMPLATES se encuentran los formatos a usar para cada 
 
 Requerimiento: Mínimo 16GB de VRAM en una tarjeta de video NVIDIA con tecnología CUDA (es posible la ejecución en Apple Silicon e Intel CPU, revisar Wiki de la interfaz [text-generation-webui](https://github.com/oobabooga/text-generation-webui). También se requiren aproximadamente 50GB de espacio de disco para descargar todos los modelos y adaptadores. 
 
-1. Seguir las instrucciones en la página de la interfaz para la instalación del ENV y del programa en sí.
+1. Seguir las instrucciones en la página de la interfaz para la instalación del ambiente de ejecución Conda con todas las librerías necesarias y de la interfaz en sí.
 2. Ejecutar la interfaz acorde a las instrucciones.
-3. En la pestaña "Model", descargar un modelo de acuerdo a las instrucciones de la interfaz. Seleccionar los modelos provistos anteriormente.
-4. Cargar el modelo con la función "load in 8 bit" activada para que el modelo pueda ejecutarse en 16GB de VRAM.
+3. En la pestaña "Model", descargar un modelo de acuerdo a las instrucciones de la interfaz. Seleccionar los modelos provistos anteriormente. 
+4. Cargar el modelo con la función "load in 8 bit" activada para que los modelo puedan ejecutarse en los 16GB de VRAM disponibles.
 5. Colocar los adaptadores, presets y templates en sus respectivas carpetas dentro de la carpeta de instalación de la interfaz.
-6. En la sección "LORA" seleccionar el adaptador que se quiera probar para el modelo cargado.
+6. En la sección "LORA" dentro de la misma ventada de 'Model', seleccionar el adaptador que se quiera probar para el modelo cargado.
 7. En la pestaña "Parameters" seleccionar el preset provisto para el modelo escogido.
 8. En la pestaña "Instruction" seleccionar el preset provisto para el modelo escogido.
 9. En la pestaña "Chat" seleccionar el modo 'instruct'.
