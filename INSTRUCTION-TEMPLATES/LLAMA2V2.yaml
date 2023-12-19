@@ -1,0 +1,3 @@
+turn_template: '<s>[INST]<|user|><|user-message|> [/INST] <|bot|><|bot-message|> </s><s>[INST] '
+context: "<<SYS>>\n<|system-message|> \n<</SYS>>\n\n"
+system_message: Answer the question with a short response. Always answer in Spanish. Do not ask questions back.
